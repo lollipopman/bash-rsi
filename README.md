@@ -7,7 +7,7 @@ emacs mode. This approach was inspired by tpope's
 This config allows setting the bash readline mode to vi, but keeps all the
 shortcuts from emacs mode intact.
 
-In addition it sets the cursor to a vertical bar(❘) when in the hybrid emacs-vi
+In addition it sets the cursor to a vertical bar(❙) when in the hybrid emacs-vi
 insert mode, and a block cursor(▮) when in vi command mode.
 
 ## Install
