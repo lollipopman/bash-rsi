@@ -10,6 +10,15 @@ shortcuts from emacs mode intact.
 In addition it sets the cursor to a vertical bar(❙) when in the hybrid emacs-vi
 insert mode, and a block cursor(▮) when in vi command mode.
 
+## Trying it out via a debian docker image
+
+```
+git clone https://github.com/lollipopman/bash-rsi.git
+cd bash-rsi
+bash ./test
+```
+
+
 ## Install
 
 ```
