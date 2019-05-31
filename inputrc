@@ -5,6 +5,8 @@ set show-mode-in-prompt on
 set vi-ins-mode-string \1\e[6 q\2
 # vi-command use a block cursor
 set vi-cmd-mode-string \1\e[2 q\2
+# don't reassign keys based on the stty settings, this breaks emacs C-w
+set bind-tty-special-chars off
 # Based on this wonderfully helpful post,
 # https://stackoverflow.com/a/38989262/1236063 the key map vi-insert is mostly
 # a subset of emacs mode, so add all the mappings from emacs mode into
