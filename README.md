@@ -13,15 +13,15 @@ insert mode, and a block cursor(▮) when in vi command mode.
 ## Trying it out via a debian docker image
 
 ```
-git clone https://github.com/lollipopman/bash-rsi.git
-cd bash-rsi
+git clone https://github.com/lollipopman/bash-rsi.git ~/.bash-rsi
+cd .bash-rsi
 bash ./test
 ```
-
 
 ## Install
 
 ```
-cat inputrc >> ~/.inputrc
-cat bashrc >> ~/.bashrc
+git clone https://github.com/lollipopman/bash-rsi.git ~/.bash-rsi
+printf '$include ~/.bash-rsi/inputrc\n' >> ~/.inputrc
+printf '# shellcheck source=.bash-rsi/bashrc\nsource ~/.bash-rsi/bashrc\n' >> ~/.bashrc
 ```
