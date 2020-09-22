@@ -20,6 +20,8 @@ set bind-tty-special-chars off
 #   sort > emacs
 #
 set keymap vi-insert
+# unbind \C-x so it is not bound by readline to self-insert
+"\C-x":
 "\C-a": beginning-of-line
 "\C-?": backward-delete-char
 "\C-b": backward-char
