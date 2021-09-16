@@ -31,7 +31,11 @@ set keymap vi-insert
 "\C-f": forward-char
 "\C-g": abort
 "\C-h": backward-delete-char
+$if birdc
+"\C-i": bird-complete
+$else
 "\C-i": complete
+$endif
 "\C-j": accept-line
 "\C-k": kill-line
 "\C-l": clear-screen
@@ -138,3 +142,6 @@ set keymap vi-insert
 "\e.": yank-last-arg
 "\e_": yank-last-arg
 "\ey": yank-pop
+$if birdc
+"?": bird-help
+$endif
