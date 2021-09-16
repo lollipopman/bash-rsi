@@ -1,4 +1,4 @@
-# reduce escape timeout delay, so that the cursor changes faster 
+# reduce escape timeout delay, so that the cursor changes faster
 set keyseq-timeout 200
 # set the main editing mode to vi so we can use the vi-*-mode-string functions
 set editing-mode vi
